@@ -1,0 +1,30 @@
+.Main {
+    width: inherit;
+    height : 100%;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+.TeamName {
+    flex: 0.5;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+.Details {
+    flex: 2;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+}
+.About {
+    flex: 1;
+    border: 1px solid black;
+}
+.person {
+    flex: 1;
+    border: 1px solid black;
+}
