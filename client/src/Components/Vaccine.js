@@ -77,15 +77,15 @@ class Vaccine extends React.Component {
                     <div className = "AForm">
                         <div className = "fdtl input-container">
                             <input type="text" required="" name = "name" onChange = {this.handleChange}/>
-                            <label>Full Name</label>
+                            <label className="detail">Full Name</label>
                         </div>
                         <div className = "fdtl input-container">
                             <input type="text" required=""/>
-                                <label>Address</label>
+                                <label className="detail">Address</label>
                         </div>
                         <div className = "fdtl input-container">
                             <input type="text" required="" name = "state_" onChange = {this.handleChange}/>
-                                <label>State</label>
+                                <label className="detail">State</label>
                         </div>
                             {/* <div className = "fdtl input-container">
                                 <input type="text" required=""/>
@@ -93,15 +93,19 @@ class Vaccine extends React.Component {
                             </div> */}
                         <div className = "fdtl input-container">
                             <input type="text" required="" name = "pincode" onChange = {this.handleChange}/>
-                                <label>District</label>
+                                <label className="detail">District</label>
                         </div>
                         <div className = "fdtl input-container">
                             <input type="text" required="" name = "email" onChange = {this.handleChange}/>
-                                <label>Email Address</label>
+                                <label className="detail">Email Address</label>
                         </div>
                         <div className = "fdtl input-container">
                             <input type="text" required="" name = "mobile" onChange = {this.handleChange}/>
-                                <label>Mobile Number</label>
+                                <label className="detail">Mobile Number</label>
+                        </div>
+                        <div className = "fdtl input-container">
+                            <input type="text" required=""/>
+                                <label className="detail">Age</label>
                         </div>
                     </div>
                 </div>
@@ -109,35 +113,31 @@ class Vaccine extends React.Component {
                         <div className = "h3">
                             <h3 style = {{textAlign : "center"}}>Health Details</h3>
                         </div>
-                        <div style = {{flex : 7 , display : "flex" , flexDirection : "row"}}>
-                            <div className = "form1">
-                                <div className = "fdtl input-container" style = {{marginTop : "15px"}}>
-                                    <input type="text" required=""/>
-                                    <label>Age</label>
-                                </div>
-                                <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setST}>Do you have Sore Throat</Switch>
-                                <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setCO}>Do you have Cough ?</Switch>
+                        <div>
+                            <div className = "form1a">
+                                <Switch shape="round" color="black" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setST}>Do you have a sore throat?</Switch><br></br>
+                                <Switch shape="round" color="black" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setCO}>Do you have a cough?</Switch><br></br>
                                 {/* <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy">Do you have Fever ?</Switch> */}
-                                <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setDB}>Do you have Difficulty in Breathing ?</Switch>
-                                <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setFV}>DO you Have Fever ?</Switch>
+                                <Switch shape="round" color="black" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setDB}>Do you have difficulty in breathing?</Switch><br></br>
+                                <Switch shape="round" color="black" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setFV}>Do you have a fever?</Switch><br></br>
                                 {/* <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy">Do you have Cough ?</Switch> */}
-                                <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setHD}>Do You have HeadAche ?</Switch> 
+                                <Switch shape="round" color="black" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy" onClick = {setHD}>Do you have a headache?</Switch> <br></br>
                             </div>
-                            <div className = "form1">
-                                <div style = {{height : "100%" , marginTop : "65px"}}>
+                            <div className = "form1b">
+                                <div>
                                     {/* <Switch shape="round" color="success" icon={<i className="mdi mdi-check"/>} animation="smooth" className = "sy">Do you have Cough ?</Switch> */}
-                                    <Switch shape = "slim" className = "sy">Any History of Diabetes</Switch>
-                                    <Switch shape = "slim" className = "sy">Any History of Hypertension</Switch>
-                                    <Switch shape = "slim" className = "sy">Any History of Lung Disease</Switch>
-                                    <Switch shape = "slim" className = "sy">Any History of Heart Disease</Switch>
-                                    <Switch shape = "slim" className = "sy">Any History of Kidney Disorder</Switch>
+                                    <Switch shape = "slim" className = "sy">Any History of Diabetes</Switch><br></br>
+                                    <Switch shape = "slim" className = "sy">Any History of Hypertension</Switch><br></br>
+                                    <Switch shape = "slim" className = "sy">Any History of Lung Disease</Switch><br></br>
+                                    <Switch shape = "slim" className = "sy">Any History of Heart Disease</Switch><br></br>
+                                    <Switch shape = "slim" className = "sy">Any History of Kidney Disorder</Switch><br></br>
                                 </div>
                             </div>
-                        </div>
-                        <div style = {{flex : "1"}}>
-                        <div className="button_cont" align="center"><a className="example_d" onClick = {this.handleSubmit}>Get Vaccine</a></div>
                         </div>
                     </div>
+                <div>
+                    <div className="button_cont" align="center"><a className="example_d" onClick = {this.handleSubmit}>Submit</a></div>
+                </div>
             </div>
             )
        }

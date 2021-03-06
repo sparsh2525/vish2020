@@ -35,14 +35,27 @@ class IvsC extends React.Component {
     }
     render() {
         return ( 
-            <div style = {{width : "inherit" , height : "100%"}} className = "contt">
-                <img src = {this.state.images[this.state.currentImage]} alt = "cleaning images" className = "img2"/>
-                <p style = {{marginLeft : "10px"}} className = "co">
-                    The number of healthcare and frontline workers vaccinated against Covid-19 reached 77.66 lakh on the 28th day of the countrywide inoculation programme, the Union Health Ministry said on February 13. The cumulative number of healthcare and frontline workers vaccinated against Covid-19 till 6 pm on Friday is 77,66,319 as per the provisional report, the ministry said.<br></br><hr></hr>
-                    These include 58,65,813 healthcare workers (58.9 per cent of the target number) and 19,00,506 frontline workers (21.2 per cent of the target beneficiaries) whose vaccination started on February 2, it said. "A total 2,61,309 beneficiaries were vaccinated till 6 pm on Friday across 35 states and UTs. These include 50,837 HCWs and 2,10,472 FLWs as per provisional figures," the ministry said.<br></br><hr></hr>
-                    <strong>WHEN WILL OTHERS GET THE VACCINE?</strong><br></br>
-The third phase of vaccination - which will cover 27 crore people aged 50 and those with co-morbidities - is likely to commence in March, Health Minister Harsh Vardhan had said in the Lok Sabha on Friday. He added that the vaccination drive for frontline workers had begun this week. "In the coming days, 27 crore people who are of above 50 years of age and those under 50 with co-morbidities will be vaccinated. It is not possible to give an exact date, but we estimate that this process can start in the second, third, or the fourth week of March," he said.
-                </p>
+            <div>
+                <div>
+                    <img src = {this.state.images[this.state.currentImage]} alt = "cleaning images" className = "img2"/>
+                </div>
+                <div className="left">
+                    <h1>
+                        India Vs. Covid
+                    </h1>
+                    <p>
+                        <ul>
+                        <li>The number of healthcare and frontline workers vaccinated against Covid-19 reached 77.66 lakh on the 28th day of the countrywide inoculation programme, the Union Health Ministry said on February 13. The cumulative number of healthcare and frontline workers vaccinated against Covid-19 till 6 pm on Friday is 77,66,319 as per the provisional report, the ministry said.
+                        </li>
+                        <li>These include 58,65,813 healthcare workers (58.9 per cent of the target number) and 19,00,506 frontline workers (21.2 per cent of the target beneficiaries) whose vaccination started on February 2, it said. "A total 2,61,309 beneficiaries were vaccinated till 6 pm on Friday across 35 states and UTs. These include 50,837 HCWs and 2,10,472 FLWs as per provisional figures," the ministry said.
+                        </li>
+                        <strong>WHEN WILL OTHERS GET THE VACCINE?</strong>
+                        <li>The third phase of vaccination - which will cover 27 crore people aged 50 and those with co-morbidities - is likely to commence in March, Health Minister Harsh Vardhan had said in the Lok Sabha on Friday. He added that the vaccination drive for frontline workers had begun this week. "In the coming days, 27 crore people who are of above 50 years of age and those under 50 with co-morbidities will be vaccinated. It is not possible to give an exact date, but we estimate that this process can start in the second, third, or the fourth week of March," he said.
+                        </li>
+                        </ul>
+                    </p>
+                </div>
+                
             </div>
         )
     }
