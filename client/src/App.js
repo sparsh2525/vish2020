@@ -17,7 +17,6 @@ class App extends React.Component {
       return(
         <>
             <div className = "MainBody">
-              <h1 style = {{textAlign : "center"}}> <GiChestnutLeaf className = "icon"/>V.A.B.O.P</h1>
               <div className = "content">
                 <div className = "content1">
                   <Navbar/>

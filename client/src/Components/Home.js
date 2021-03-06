@@ -36,13 +36,25 @@ class Home extends React.Component {
     }
     render() {
         return ( 
-            <div style = {{width : "inherit" , height : "fit-content"}}>
-                <img src = {this.state.images[this.state.currentImage]} alt = "cleaning images" height = "300px" width = "700px" className = "img1"/>
+            <div className="container">
+                <img src = {this.state.images[this.state.currentImage]} alt = "cleaning images" height = "1000px" className = "img1"/>
+                <div className="text-block-black">
+                    <h1 className="title">V.A.B.O.P</h1>
+                    <div className="text-block-white">
+                        <p className="sub">Vaccine Allotment Based On Priority</p>
+                        <p className="sub">| Helping One, Benefitting Many |</p>
+                    </div>
+                </div>
+                
                 <div className = "IBody">
-                    Coronavirus India Live Updates: India’s total tally of Covid-19 cases rose to 1,10,16,434 on Tuesday, with 10,584 new infections being reported in a day, while the recoveries have surpassed 1.07 crore, according to data from the Union Health Ministry.                
-                    With 78 new fatalities in a day, the overall death toll increased to 1,56,463, the data updated at 8 am showed.
-                    The number of people who have recuperated from the disease reached 1,07,12,665, translating to a national recovery rate of 97.24 per cent while the case fatality rate stands at 1.42 per cent.<br></br>
-                    The active coronavirus infections in the country have reduced to 1,47,306, which comprises 1.34 per cent of the total caseload, the data stated.
+                    <h1 className="head">Overview :</h1>
+                    <ul>
+                        <li>Coronavirus India Live Updates: India’s total tally of Covid-19 cases rose to 1,10,16,434 on Tuesday, with 10,584 new infections being reported in a day, while the recoveries have surpassed 1.07 crore, according to data from the Union Health Ministry.</li>
+                        <li>With 78 new fatalities in a day, the overall death toll increased to 1,56,463, the data updated at 8 am showed.</li>
+                        <li>The number of people who have recuperated from the disease reached 1,07,12,665, translating to a national recovery rate of 97.24 per cent while the case fatality rate stands at 1.42 per cent.</li>
+                        <li>The active coronavirus infections in the country have reduced to 1,47,306, which comprises 1.34 per cent of the total caseload, the data stated.</li>
+                    </ul>
+                    
                 </div>
             </div>
         )
